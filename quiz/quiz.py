@@ -18,6 +18,7 @@ def ask_questions():
     number_of_questions = len(questions)
     questions_and_answers = zip(questions, answers)
     score = 0        
+    
     for question, answer in questions_and_answers:
         guess = input(question + "> ")
         if guess == answer:
